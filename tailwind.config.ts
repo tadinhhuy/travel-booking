@@ -12,6 +12,7 @@ const config: Config = {
     extend: {
       colors: {
         ...theme.colors,
+        'neutral-150': '#F8F9FA00',
         'neutral-650': '#424955FF',
         'neutral-900': '#171A1FFF',
       },
