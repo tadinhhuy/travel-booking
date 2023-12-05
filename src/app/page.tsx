@@ -1,7 +1,9 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Image from 'next/image';
-import CampingAtNightImage from '../../public/background_home_page.jpeg';
+import camping_at_night_image from '../../public/background_home_page.jpeg';
+import adventure_path_image from '../../public/adventure_path.jpeg';
+import online_experience_image from '../../public/online_experience.jpeg';
 
 const LocationFilter = () => {
   return (
@@ -108,7 +110,7 @@ export default function Home() {
         <section className="relative">
           <Image
             className="rounded-md min-w-full"
-            src={CampingAtNightImage}
+            src={camping_at_night_image}
             alt="travel image"
           />
           <p className="text-3xl font-semibold absolute top-[50%] left-[35%] text-white">
@@ -116,7 +118,7 @@ export default function Home() {
           </p>
         </section>
       </div>
-      <section className="flex flex-col gap-3">
+      <section className="flex flex-col gap-3 mb-14">
         <p className="font-medium text-2xl">A SIGNATURE OF EXCELLENCE</p>
         <div className="grid gap-2 grid-cols-4">
           <SignatureExcellenceCard
@@ -140,30 +142,33 @@ export default function Home() {
             image="https://i.pinimg.com/564x/60/31/35/60313560814419689a5851deea8c87e8.jpg"
           />
         </div>
-
-        {/* <div className="flex gap-6 justify-between w-full">
-          <SignatureExcellenceCard
-            label="New York"
-            desc="2,345 properties - 746 miles away"
-            image="https://i.pinimg.com/564x/62/56/7a/62567ad90a25c17b5baa70d243137310.jpg"
-          />
-          <SignatureExcellenceCard
-            label="Maldives"
-            desc="2,345 properties - 746 miles away"
-            image="https://i.pinimg.com/564x/ad/37/05/ad370511d29ac73fc9b0d9330deeb4d4.jpg"
-          />
-          <SignatureExcellenceCard
-            label="Bhutan"
-            desc="2,345 properties - 746 miles away"
-            image="https://i.pinimg.com/564x/4d/e0/a8/4de0a8accf9ce66f009c1ab2ff3f0793.jpg"
-          />
-          <SignatureExcellenceCard
-            label="Amsterdam"
-            desc="2,345 properties - 746 miles away"
-            image="https://i.pinimg.com/564x/60/31/35/60313560814419689a5851deea8c87e8.jpg"
-          />
-          
-        </div> */}
+      </section>
+      <section className="flex flex-col gap-3">
+        <p className="font-medium text-2xl">FIND NEW POSSIBILITY</p>
+        <div className="flex gap-3 w-full">
+          <div className="relative">
+            <Image
+              className="rounded-md w-screen"
+              src={adventure_path_image}
+              alt="adventure path"
+              height={600}
+            />
+            <p className="text-3xl font-semibold absolute top-[30%] left-[20%] text-white">
+              Adventure path for your trip
+            </p>
+          </div>
+          <div className="relative">
+            <Image
+              className="rounded-md w-screen"
+              src={online_experience_image}
+              alt="online experience image"
+              height={600}
+            />
+            <p className="text-3xl font-semibold absolute top-[30%] left-[20%] text-white">
+              Things to do from home
+            </p>
+          </div>
+        </div>
       </section>
     </main>
   );
