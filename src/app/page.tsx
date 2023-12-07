@@ -153,9 +153,14 @@ export default function Home() {
               alt="adventure path"
               height={600}
             />
-            <p className="text-3xl font-semibold absolute top-[30%] left-[20%] text-white">
-              Adventure path for your trip
-            </p>
+            <div className="flex gap-3 flex-col absolute top-[30%] left-[20%]">
+              <p className="text-3xl font-semibold text-white">
+                Adventure path for your trip
+              </p>
+              <button className="bg-white rounded-md px-2 py-1 w-fit text-xs">
+                Experiences
+              </button>
+            </div>
           </div>
           <div className="relative">
             <Image
@@ -164,9 +169,14 @@ export default function Home() {
               alt="online experience image"
               height={600}
             />
-            <p className="text-3xl font-semibold absolute top-[30%] left-[20%] text-white">
-              Things to do from home
-            </p>
+            <div className="flex gap-3 flex-col absolute top-[30%] left-[20%]">
+              <p className="text-3xl font-semibold text-white">
+                Things to do from home
+              </p>
+              <button className="bg-white rounded-md px-2 py-1 w-fit text-xs">
+                Online Experiences
+              </button>
+            </div>
           </div>
         </div>
       </section>
