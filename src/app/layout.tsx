@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Montserrat } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
+import PrelineScript from '@/components/PrelineScript';
 
 const inter = Montserrat({ subsets: ['latin'] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <PrelineScript />
       <body className={inter.className}>
         <Header />
         {children}
