@@ -1,78 +1,9 @@
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
-import clsx from 'clsx';
+'use client';
 import Image from 'next/image';
 import camping_at_night_image from '../../public/background_home_page.jpeg';
 import adventure_path_image from '../../public/adventure_path.jpeg';
 import online_experience_image from '../../public/online_experience.jpeg';
-
-const LocationFilter = () => {
-  return (
-    <section className="flex gap-16 bg-white rounded-3xl shadow-inner px-5 py-3 translate-y-7 z-30">
-      <div className="flex flex-col">
-        <label htmlFor="location" className="text-xs font-bold">
-          Location
-        </label>
-        <input
-          id="location"
-          name="location"
-          className={clsx(
-            // 'focus:text-neutral-900 focus:bg-neutral-150',
-            // 'disabled:text-neutral-900 disabled:bg-neutral-150',
-            // 'hover:text-neutral-900 hover:bg-neutral-150',
-            'border-0 outline-none rounded-md bg-neutral-150 text-sm',
-            'placeholder:text-neutral-900'
-          )}
-          placeholder="Where are you going?"
-        />
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="checkIn" className="text-xs font-bold">
-          Check in
-        </label>
-        <input
-          id="checkIn"
-          name="checkIn"
-          className={clsx(
-            'border-0 outline-none rounded-md bg-neutral-150 text-sm',
-            'placeholder:text-neutral-900'
-          )}
-          placeholder="Pick date"
-        />
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="checkOut" className="text-xs font-bold">
-          Check out
-        </label>
-        <input
-          id="checkOut"
-          name="checkOut"
-          className={clsx(
-            'border-0 outline-none rounded-md bg-neutral-150 text-sm',
-            'placeholder:text-neutral-900'
-          )}
-          placeholder="Pick date"
-        />
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="guests" className="text-xs font-bold">
-          Guests
-        </label>
-        <input
-          id="guests"
-          name="guests"
-          className={clsx(
-            'border-0 outline-none rounded-md bg-neutral-150 text-sm',
-            'placeholder:text-neutral-900'
-          )}
-          placeholder="Add guests"
-        />
-      </div>
-      <button className="rounded-3xl px-3 bg-primary-500">
-        <MagnifyingGlassIcon className="w-4 h-4 text-white" />
-      </button>
-    </section>
-  );
-};
+import LocationFilter from '@/components/home/LocationFilter';
 
 const SignatureExcellenceCard = ({
   image,
