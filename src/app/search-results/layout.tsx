@@ -10,5 +10,5 @@ export default function SearchResultLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return <section>{children}</section>;
 }

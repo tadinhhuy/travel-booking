@@ -1,3 +1,3 @@
 export default function SearchResult() {
-  return <>search result page</>;
+  return <div>search result page</div>;
 }
