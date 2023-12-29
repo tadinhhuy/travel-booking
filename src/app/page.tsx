@@ -3,7 +3,7 @@ import Image from 'next/image';
 import camping_at_night_image from '../../public/background_home_page.jpeg';
 import adventure_path_image from '../../public/adventure_path.jpeg';
 import online_experience_image from '../../public/online_experience.jpeg';
-import LocationFilter from '@/components/home/LocationFilter';
+import { LocationFilter } from '@/components/home';
 
 const SignatureExcellenceCard = ({
   image,
