@@ -44,7 +44,7 @@ const Header = () => {
   };
 
   return (
-    <div className="flex items-center absolute h-[70px] shadow-sm top-0 w-full px-5 justify-between">
+    <div className="flex items-center h-[70px] shadow-sm w-full px-5 justify-between">
       <div className="flex gap-10 items-center">
         <div>
           <PaperAirplaneIcon className="w-8 h-8 font-bold text-primary" />
