@@ -11,7 +11,7 @@ const LocationFilter = () => {
   const [openCheckInDate, setOpenCheckInDate] = useState(false);
 
   return (
-    <section className="flex gap-16 bg-white rounded-3xl shadow-inner px-5 py-3 translate-y-10 z-30">
+    <section className="grid grid-flow-col gap-16 bg-white rounded-3xl shadow-inner px-5 py-3 translate-y-10 z-30">
       <div className="flex flex-col">
         <label htmlFor="location" className="text-xs font-bold">
           Location
@@ -40,9 +40,11 @@ const LocationFilter = () => {
       <div className="flex flex-col">
         <GuestSelection />
       </div>
-      <Button className="rounded-3xl px-3 bg-primary-500">
-        <MagnifyingGlassIcon className="w-4 h-4 text-white" />
-      </Button>
+      <div>
+        <Button className="rounded-3xl px-3 bg-primary-500">
+          <MagnifyingGlassIcon className="w-4 h-4 text-white" />
+        </Button>
+      </div>
     </section>
   );
 };
