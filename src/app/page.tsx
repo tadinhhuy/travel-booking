@@ -15,13 +15,14 @@ const SignatureExcellenceCard = ({
   desc: string;
 }) => {
   return (
-    <div className="relative max-h-[400px] h-[400px] gap-3 flex flex-col bg-white">
+    <div className="max-h-[400px] h-[400px] gap-3 flex flex-col bg-white">
       <Image
         className="rounded-xl object-cover min-h-[300px]"
         src={image}
         alt="Image Description"
-        fill
         sizes="(min-width: 808px) 50vw, 100vw"
+        width={400}
+        height={400}
       />
       <div className="ml-3">
         <div className="text-2xl font-bold">{label}</div>
@@ -33,8 +34,8 @@ const SignatureExcellenceCard = ({
 
 export default function Home() {
   return (
-    <main className="bg-white flex flex-col min-h-screen px-[132px] my-10">
-      <div className="mt-12 mb-14">
+    <main className="bg-white flex flex-col gap-8 min-h-screen">
+      <section>
         <div className="flex justify-center">
           <LocationFilter />
         </div>
@@ -48,10 +49,10 @@ export default function Home() {
             Awaken to a different world
           </p>
         </section>
-      </div>
+      </section>
       <section className="flex flex-col gap-3 mb-14">
         <p className="font-medium text-2xl">A SIGNATURE OF EXCELLENCE</p>
-        <div className="grid gap-2 grid-cols-4">
+        <section className="grid gap-2 grid-cols-4">
           <SignatureExcellenceCard
             label="New York"
             desc="2,345 properties - 746 miles away"
@@ -72,7 +73,7 @@ export default function Home() {
             desc="2,345 properties - 746 miles away"
             image="https://i.pinimg.com/564x/60/31/35/60313560814419689a5851deea8c87e8.jpg"
           />
-        </div>
+        </section>
       </section>
       <section className="flex flex-col gap-3">
         <p className="font-medium text-2xl">FIND NEW POSSIBILITY</p>
